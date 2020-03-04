@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+.jumbotron {
+  background-color: brown;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 0;
+}
+.title-wb {
+  max-width: 300px;
+  background-color: #c75656;
+  opacity: 1;
+  color: #ffffff;
+  padding: 5px 1px 1px 5px;
+  margin: 1px 1px 1px 1px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-fed {
+  max-width: 400px;
+  background-color: #c75656;
+  opacity: 1;
+  color: #ffffff;
+  padding: 5px 5px 5px 5px;
+  margin: 2px 5px 5px 1px;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: 'Courier New', Courier, monospace;
+}
+.button-vap {
+  border: 1px solid #ffffff;
+  border-radius: 20in;
+  padding: 0.7em 2em 0.7em 2em;
+}
+.button-c {
+  border: 1px solid #ffffff;
+  border-radius: 20in;
+  padding: 0.7em 2em 0.7em 2em;
+}
+.j-light-version {
+  background-color: #c75656;
+}
+.btn-icon {
+  border: 1px solid #ffffff;
+  border-radius: 20in;
+  padding: 0.7em 1.7em 0.7em 1.7em;
+}
+.j-white-version {
+  background-color: #ffffff;
+}

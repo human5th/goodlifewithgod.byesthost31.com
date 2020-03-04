@@ -1,0 +1,50 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="employeeService.currentEmployee.firstName" type="text" placeholder="First Name">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="employeeService.currentEmployee.lastName" type="text" placeholder="Last Name">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="employeeService.currentEmployee.id" type="text" placeholder="employee ID">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="employeeService.currentEmployee.designation" type="text" placeholder="Job or Work or what do you do?">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="employeeService.currentEmployee.address" type="text" placeholder="Adress">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="employeeService.currentEmployee.contact" type="text" placeholder="Phone Number">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="form-group">
+        <button (click)="createAndUpdate(employeeService.currentEmployee)" class="form-control btn btn-success btn-lg"><i class="fa fa-save"></i> SAVE</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <button class="form-control btn btn-primary btn-lg" (click)="clear()"><i class="fa fa-retweet"></i> CLEAR</button>
+      </div>
+    </div>
+  </div>
+</div>

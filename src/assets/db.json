@@ -1,0 +1,100 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "firstName": "Raliva",
+      "lastName": "Varma",
+      "designation": "Developer",
+      "contact": 78932,
+      "address": "Pune"
+    },
+    {
+      "id": 2,
+      "firstName": "Benja",
+      "lastName": "Varma",
+      "designation": "UI-Developer",
+      "contact": 12345,
+      "address": "Pune"
+    },
+    {
+      "id": 3,
+      "firstName": "Kintana",
+      "lastName": "Varma",
+      "designation": "Web Redactor",
+      "contact": 98765,
+      "address": "Mumbai"
+    },
+    {
+      "firstName": "Daniel",
+      "lastName": "Rakotonirina",
+      "designation": "Shop Keeper",
+      "id": 4,
+      "contact": "986234",
+      "address": "Antananarivo"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "designation": "",
+      "id": 5,
+      "contact": null,
+      "address": ""
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "designation": "",
+      "id": 6,
+      "contact": null,
+      "address": ""
+    }
+  ],
+  "Clients": [
+    {
+      "id": 1,
+      "firstName": "Raliva",
+      "lastName": "Varma",
+      "designation": "Developer Front-End",
+      "contact": 78932,
+      "address": "Pune"
+    },
+    {
+      "id": 2,
+      "firstName": "Benja",
+      "lastName": "Varma",
+      "designation": "UI Developer",
+      "contact": 12345,
+      "address": "Pune"
+    },
+    {
+      "id": 3,
+      "firstName": "Kintana",
+      "lastName": "Varma",
+      "designation": "Web Redactor",
+      "contact": 98765,
+      "address": "Mumbai"
+    },
+    {
+      "firstName": "Balita",
+      "lastName": "Tovondriaka",
+      "designation": "Shop-keeper",
+      "id": 5,
+      "contact": "91273",
+      "address": "Toamasina"
+    }
+  ],
+  "Products": [
+    {
+      "dateLivraison": "2020-03-02",
+      "dateRetour": "2020-03-04",
+      "clientName": "Mr Joaba",
+      "clientAddress": "Ankazomanga Sud",
+      "avance": null,
+      "montant": null,
+      "id": 1,
+      "designation": "Para soleil",
+      "quantity": 4,
+      "pu": 25000
+    }
+  ]
+}

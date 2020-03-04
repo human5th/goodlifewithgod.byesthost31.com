@@ -1,0 +1,16 @@
+.logo {
+  background-color: black;
+  padding: 2px;
+}
+.er {
+  color: aqua;
+  text-decoration: underline white;
+}
+.dev {
+  color: brown;
+  text-decoration: underline yellow;
+}
+.design {
+  color: white;
+  text-decoration: underline red;
+}

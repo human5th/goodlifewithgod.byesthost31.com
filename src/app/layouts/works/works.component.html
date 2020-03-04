@@ -1,0 +1,170 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>FACTURE</h2>
+    </div>
+    <div class="col-sm-6">
+      <p class="text-right">
+        <img (click)="hello()" class="img-responsive footer-img-logo" src="https://livedemo00.template-help.com/wordpress_43885/wp-content/themes/theme2047/images/iconSweets/icon-3.png" alt="logo de l'entreprise">
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Nom de la compagnie">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Adresse postale">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Details du contact">
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <input class="form-control" type="number" placeholder="Telephone">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="form-group">
+            <input class="form-control" type="email" placeholder="Email">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <input class="form-control" type="date" placeholder="Date du facture" name="" id="">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="number" placeholder="No de Facture" name="" id="">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>DESTINATAIRE</h4>
+      <hr>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nom">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nom de la societe">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Adresse postale">
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <input class="form-control" type="number" placeholder="Telephone">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="form-group">
+            <input class="form-control" type="email" placeholder="Email">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h4>ENVOYER A</h4>
+      <hr>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nom">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nom de la societe">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Adresse postale">
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <input class="form-control" type="number" placeholder="Telephone">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="form-group">
+            <input class="form-control" type="email" placeholder="Email">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table table-hover table-striped">
+        <thead class="">
+          <tr>
+            <th>DESCRIPTION</th>
+            <th>QUANTITE</th>
+            <th>PRIX UNITAIRE</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of rows">
+            <td class="pt-3-half" contenteditable="true">{{ item.designation }}</td>
+            <td class="pt-3-half" contenteditable="true">{{ item.quantity }}</td>
+            <td class="pt-3-half" contenteditable="false">{{ item.unitary }}</td>
+            <td class="pt-3-half" contenteditable="false">{{ item.total }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>
+        Remarques, notes et instructions de paiement:
+      </p>
+    </div>
+    <div class="col-sm-6 text-right">
+      <form>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-5 col-form-label">SOUS-TOTAL</label>
+          <div class="col-sm-7">
+            <input class="form-control text-right" disabled type="number" [placeholder]="soustotal" name="" id="">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-5 col-form-label">REMISE</label>
+          <div class="col-sm-7">
+            <input class="form-control text-right" type="number" [placeholder]="remise" name="" id="">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-5 col-form-label">TAUX D'IMPOSITION</label>
+          <div class="col-sm-7">
+            <input class="form-control text-right" type="number" placeholder="0" name="" id="">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-5 col-form-label">TAXE TOTAL</label>
+          <div class="col-sm-7">
+            <input class="form-control text-right" type="number" placeholder="0" name="" id="">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-5 col-form-label">EXPEDITION MANUTENTION</label>
+          <div class="col-sm-7">
+            <input class="form-control text-right" type="number" placeholder="0" name="" id="">
+          </div>
+        </div>
+      </form>
+      <hr>
+      <form>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-5 col-form-label">SOLDE DU:</label>
+          <div class="col-sm-7">
+            <input class="form-control text-right" type="number" disabled [placeholder]="solde" name="" id="">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

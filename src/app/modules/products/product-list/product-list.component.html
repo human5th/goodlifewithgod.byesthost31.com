@@ -1,0 +1,50 @@
+<div class="jumbotron p-4">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Phone</th>
+        <th>Designation</th>
+        <th>Qte</th>
+        <th>P.U</th>
+        <th>Avance</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of allProduct">
+        <td>{{ prod.id }}</td>
+        <td>{{ prod.clientName }}</td>
+        <td>{{ prod.clientPhone }}</td>
+        <td>{{ prod.designation }}</td>
+        <td>{{ prod.quantity }}</td>
+        <td>{{ prod.pu }}</td>
+        <td>{{ prod.avance }}</td>
+        <td>
+          <a class="btn text-default" (click)="edit(prod)">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a class="btn text-danger" (click)="deleteProduct(prod.id)">
+            <i class="fa fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td><a class="btn" href="#edit"><span class="fa fa-edit"></span></a></td>
+        <td><a href="#delete" class="btn"><span class="fa fa-trash text-danger"></span></a></td>
+      </tr>
+      <tr>
+        <td>Ravi</td>
+        <td>Sharma</td>
+        <td><a class="btn" href="#edit"><span class="fa fa-edit"></span></a></td>
+        <td><a href="#delete" class="btn"><span class="fa fa-trash text-danger"></span></a></td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>

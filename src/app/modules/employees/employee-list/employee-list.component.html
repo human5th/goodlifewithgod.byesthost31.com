@@ -1,0 +1,34 @@
+<div class="jumbotron p-4">
+  <table class="table table-hover">
+    <tbody>
+      <tr *ngFor="let emp of allEmployee">
+        <td>{{ emp.firstName }}</td>
+        <td>{{ emp.lastName }}</td>
+        <td>{{ emp.address }}</td>
+        <td>{{ emp.designation }}</td>
+        <td>
+          <a class="btn text-default" (click)="edit(emp)">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a class="btn text-danger" (click)="deleteEmployee(emp.id)">
+            <i class="fa fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td><a class="btn" href="#edit"><span class="fa fa-edit"></span></a></td>
+        <td><a href="#delete" class="btn"><span class="fa fa-trash text-danger"></span></a></td>
+      </tr>
+      <tr>
+        <td>Ravi</td>
+        <td>Sharma</td>
+        <td><a class="btn" href="#edit"><span class="fa fa-edit"></span></a></td>
+        <td><a href="#delete" class="btn"><span class="fa fa-trash text-danger"></span></a></td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>

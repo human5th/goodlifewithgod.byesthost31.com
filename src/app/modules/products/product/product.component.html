@@ -1,0 +1,95 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-12">
+        <h3>Client:</h3>
+        <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.clientName" type="text" placeholder="Nom du client">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.clientAddress" type="text" placeholder="Adresse du client">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="">Date de livraison:</label>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.dateLivraison" type="date" placeholder="Date de livraison">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="">Date de retour:</label>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.dateRetour" type="date" placeholder="Date de retour">
+      </div>
+    </div>
+   </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.designation" type="text" placeholder="Designation">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.avance" type="number" placeholder="Avance">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.id" type="number" placeholder="Product ID">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.quantity" type="number" placeholder="Quantity">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <input class="form-control" [(ngModel)]="productService.currentProduct.pu" type="number" placeholder="P.U">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="form-group">
+        <button (click)="createAndUpdate(productService.currentProduct)" class="form-control btn btn-success btn-lg"><i class="fa fa-save"></i> SAVE</button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <button class="form-control btn btn-primary btn-lg" (click)="clear()"><i class="fa fa-retweet"></i> CLEAR</button>
+      </div>
+    </div>
+  </div>
+</div>
